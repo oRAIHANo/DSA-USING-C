@@ -18,7 +18,7 @@ void LinkedListSearch()
     ptr = head;
     while (ptr != NULL)
     {
-        if (ptr->data != element)
+        if (ptr->data == element)
         {
             printf("Element found");
         }
