@@ -85,7 +85,7 @@ void InsertNodeAtEnd()
     if (head == NULL)
     {
         head = newnode;
-        head->link = head;
+        newnode->link = head;
     }
     else
     {
