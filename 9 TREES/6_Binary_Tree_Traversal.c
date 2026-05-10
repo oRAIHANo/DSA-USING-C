@@ -73,15 +73,15 @@ int main()
 
     //        p
     //     /    \
-    //   p1     p2
-    //  / \    / \
-    // p3 p4  p5 p6
+    //    p1     p2
+    //   / \    / \
+    //  p3 p4  p5 p6
 
-    //        1
+    //       1
     //     /    \
-    //   2      3
-    //  / \    / \
-    // 4  5   6  7
+    //    2      3
+    //   / \    / \
+    //  4   5  6   7
 
     printf("Pre Order Traversal : ");
     PreOrderTraversal(p);
