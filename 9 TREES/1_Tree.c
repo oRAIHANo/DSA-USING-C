@@ -29,7 +29,7 @@ Nodes accessible by following up the edges from a child node upwards are called 
 Ancestors are also the parents of the parents of that node.
 
 Descendants
-Nodes accessible by following up the edges from a parent node downwards are called the descendants of that node. 
+Nodes accessible by following down the edges from a parent node downwards are called the descendants of that node. 
 Descendants are also the child of the child of that node.
 
 Leaf/ External Node
