@@ -63,8 +63,27 @@ void Insertion(struct node *root)
 // case 2 the node is the non leaf node - search and replace it with inorder previous element or inorder post element
 // case 3 the node is the root node - search and replace it with inorder previous element or inorder post element and repeat this process until the tree has no empty nodes
 
+This function finds the In-Order Predecessor of a given node in a Binary Search Tree (BST) by locating the maximum value in its left subtree.
+
+Here is a quick breakdown of how it works:
+
+root = root->left;: It moves one step to the left. Since the predecessor is the largest value smaller than the current node, it must be located in the left subtree.
+
+while (root->right != NULL): It then travels as far to the right as possible within that subtree.
+
+return root;: The rightmost node in the left subtree is the "immediate" smaller value (the predecessor).
+
+Key Constraints: Assumes a Left Child Exists: This specific code will crash if root->left is NULL. In a robust implementation, you should check if (root == NULL || root->left == NULL) before running this logic.
+
+BST Only: This logic is specific to Binary Search Trees. In a general binary tree, the "predecessor" depends entirely on the traversal order.
+
 struct node *InOrderPredecessor(struct node *root)
 {
+     
+    if (root == NULL || root->left == NULL){
+        return NULL;
+    }
+
     root = root->left;
     while (root->right != NULL)
     {
